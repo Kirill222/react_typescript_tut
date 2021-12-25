@@ -1,40 +1,19 @@
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Status } from './components/Status';
 
-function App() {
-
-  const personName = {
-    first: 'John',
-    last: 'Connor',
+function App() { 
+  
+  const handleClick = () => {
+    console.log('clicked')
   }
-
-  const nameList = [
-    {
-      first: 'John',
-      last: 'Sean',
-    },
-    {
-      first: 'Sean',
-      last: 'Smith',
-    },
-    {
-      first: 'Bruce',
-      last: 'Jones',
-    },
-  ]
 
   return (
     <div className="App">
-      <Status status="loading"/>
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to...</Heading>
-      </Oscar>
-
-      <Greet name="Batman" messageCount={10} isLoggedIn={true} />
+      <Button handleClick={handleClick}/>
     </div>
   );
 }
