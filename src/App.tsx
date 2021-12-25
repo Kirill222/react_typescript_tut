@@ -7,13 +7,13 @@ import { Status } from './components/Status';
 
 function App() { 
   
-  const handleClick = () => {
-    console.log('clicked')
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    console.log('clicked', event)
   }
 
   return (
     <div className="App">
-      <Button handleClick={handleClick}/>
+      <Button handleClick={handleClick} />
     </div>
   );
 }
