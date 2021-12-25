@@ -1,5 +1,6 @@
 import './App.css';
 import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
 import { Status } from './components/Status';
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
     <div className="App">
       <Status status="loading"/>
       <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to...</Heading>
+      </Oscar>
     </div>
   );
 }
