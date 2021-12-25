@@ -1,4 +1,5 @@
 import './App.css';
+import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Status } from './components/Status';
@@ -32,6 +33,8 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to...</Heading>
       </Oscar>
+
+      <Greet name="Batman" messageCount={10} isLoggedIn={true} />
     </div>
   );
 }
