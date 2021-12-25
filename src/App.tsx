@@ -1,7 +1,5 @@
 import './App.css';
-import { Greet } from './components/Greet';
-import { Person } from './components/Person';
-import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 function App() {
 
@@ -27,9 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="TTT" messageCount={10} isLoggedIn={true}/>
-      <Person name={personName}/>
-      <PersonList names={nameList}/>
+      <Status status="loading"/>
     </div>
   );
 }
